@@ -5,6 +5,6 @@
 }}
 
 with department as(
-select * from ANALYTICS.PUBLIC.DEPARTMENTS
+select * from {{source('data','DEPARTMENTS') }}
 )
 select * from department

@@ -6,6 +6,6 @@
 
 
 with sal  as(
-select * from ANALYTICS.PUBLIC.SALARIES
+select * from {{source('data','SALARIES')}}
 )
 select * from sal

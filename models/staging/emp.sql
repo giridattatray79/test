@@ -8,6 +8,6 @@
 
 
 with emp as(
-select * from ANALYTICS.PUBLIC.EMPLOYEES
+select * from {{source('data','EMPLOYEES')}}
 )
 select * from emp

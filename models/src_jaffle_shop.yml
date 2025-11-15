@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: data
+    database: ANALYTICS    
+    schema: public
+    tables:
+      - name: DEPARTMENTS
+      - name: EMPLOYEES
+      - name: SALARIES

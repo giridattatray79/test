@@ -1,8 +1,9 @@
-/*{{
+{{
     config(
-        materialized ='table'
+        materialized='view'
     )
-}}*/
+}}
+
 
 
 

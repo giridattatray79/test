@@ -2,9 +2,27 @@ version: 2
 
 sources:
   - name: data
-    database: ANALYTICS    
+    database: ANALYTICS
     schema: public
+
     tables:
       - name: DEPARTMENTS
+        columns:
+          - name: dept_id
+            tests:
+              - not_null
+              - unique
+
       - name: EMPLOYEES
+        columns:
+          - name: emp_id
+            tests:
+              - not_null
+              - unique
+
       - name: SALARIES
+        columns:
+          - name: salary_id
+            tests:
+              - not_null
+              - unique
